@@ -1,0 +1,16 @@
+{
+    // Required
+  "manifest_version": 2,
+  "name": "Flippa Links",
+  "version": "0.1",
+  "description": "Adds direct links to the websites listed on flippa.com ",
+  "permissions": [
+    "tabs", "https://flippa.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}
